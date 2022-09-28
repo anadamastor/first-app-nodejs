@@ -1,0 +1,9 @@
+const os = require('os');
+
+var totalMem = os.totalmem();
+var freeMem = os.freemem();
+var usedMem = totalMem - freeMem;
+console.log(`total mem is ${totalMem} \nfree memory is ${freeMem} \nused memory is ${usedMem}`)
+
+// Template string:
+// ECMAScript defines features to be implemented then by different engines.
